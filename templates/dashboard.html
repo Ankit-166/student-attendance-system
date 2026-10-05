@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12 text-center mt-5">
+        <h1>Welcome to Student Attendance System</h1>
+        <p class="lead">A simple college mini-project for managing student attendance.</p>
+        <hr>
+    </div>
+</div>
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card shadow-sm text-center bg-primary text-white mb-3">
+            <div class="card-body">
+                <h3>Total Students</h3>
+                <h2>{{ total_students }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card shadow-sm text-center bg-success text-white mb-3">
+            <div class="card-body">
+                <h3>Total Attendance Records</h3>
+                <h2>{{ total_records }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
